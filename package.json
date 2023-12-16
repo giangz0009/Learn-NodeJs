@@ -1,0 +1,39 @@
+{
+  "name": "first-pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "nodemon --inspect src/app.js",
+    "watch:sass": "node-sass --watch src/resource/scss/ --output src/public/css/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "beautiful": "lint-staged",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giangz0009/nodejs-first-project.git"
+  },
+  "author": "Giang Đỗ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giangz0009/nodejs-first-project/issues"
+  },
+  "homepage": "https://github.com/giangz0009/nodejs-first-project#readme",
+  "lint-staged": {
+    "src/**/*.{js,scss,json}": "prettier package.json --write --single-quote --trailing-comma all"
+  },
+  "dependencies": {
+    "dompurify": "^3.0.6",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.1.1"
+  }
+}
